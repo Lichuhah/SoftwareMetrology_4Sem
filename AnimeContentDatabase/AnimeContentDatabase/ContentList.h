@@ -1,3 +1,5 @@
+#ifndef CONTENTLIST_HEADER
+#define CONTENTLIST_HEADER
 #include "Title.h"
 #include <vector>
 
@@ -10,8 +12,11 @@ public:
 	ContentList();
 	void addTitle();
 	void sort();
-	void deleteTitle(int id);
+	void deleteTitle();
 	void clearList();
-	void editTitle(int id);
+	void editTitle();
 	void showList();
+	void findTitle();
+	vector<Title>* getList();
 };
+#endif
